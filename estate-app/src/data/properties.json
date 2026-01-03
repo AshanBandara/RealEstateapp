@@ -7,13 +7,15 @@
 			"price":185000000,
 			"tenure":"Freehold",
 			"description":"This modern luxury villa features expansive open-plan living spaces, floor-to-ceiling glass panels, and seamless indoor–outdoor connections. Designed for comfort and elegance, the home includes a private swimming pool, landscaped garden, and premium finishes throughout. Ideal for high-end urban living, it offers privacy, natural light, and modern architectural excellence in a prestigious neighborhood.",
-			"location":"Colombo 07, Sri Lanka",
-			"picture":"images/prop1pic1small.jpg",
-			"url":"properties/prop1.html",
+			"location":"Colombo 07, Sri Lanka, C07",
+            "previewPicture":"images/p1-1.jpg",
+			"pictures":["images/p1-2.jpg","images/p1-3.jpg","images/p1-4.jpg","images/p1-5.jpg","images/p1-6.jpg"],
+            "floorPlan":"images/p1-floor.jpg",
+			"url":"/property/prop1",
             "added": {
                 "month":"October",
                 "day":12,
-                "year":2022
+                "year":2025
             }
         },
 		{
@@ -23,13 +25,15 @@
 			"price":72000000,
 			"tenure":"Freehold",
 			"description":"This well-planned urban family house is designed for everyday comfort and functionality. It offers spacious bedrooms, a bright living area, and a practical kitchen layout suitable for family living. The property includes a small garden and parking space, making it ideal for families seeking a balanced lifestyle close to schools, workplaces, and essential city amenities.",
-			"location":"Kotte, Sri Lanka",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
+			"location":"Kotte, Sri Lanka, K07",
+            "previewPicture":"images/p2-1.jpg",
+			"pictures":["images/p2-2.jpg","images/p2-3.jpg","images/p2-4.jpg","images/p2-5.jpg","images/p2-6.jpg"],
+            "floorPlan":"images/p2-floor.jpg",
+			"url":"/property/prop2",
             "added": {
                 "month":"September",
                 "day":14,
-                "year":2022
+                "year":2025
             }
         }
         ,
@@ -40,30 +44,34 @@
 			"price":260000000,
 			"tenure":"Freehold",
 			"description":"This stunning beachfront villa offers uninterrupted ocean views and direct beach access. Featuring spacious interiors, luxury bedrooms, and open living spaces, the villa is designed for relaxation and entertainment. Large balconies, a private pool, and tropical landscaping enhance the resort-style atmosphere, making it ideal as a luxury residence or holiday investment property.",
-			"location":"Bentota, Sri Lanka",
-			"picture":"images/prop3pic1small.jpg",
-			"url":"properties/prop3.html",
+			"location":"Bentota, Sri Lanka, B08",
+            "previewPicture":"images/p3-1.jpg",
+			"pictures":["images/p3-2.jpg","images/p3-3.jpg","images/p3-4.jpg","images/p3-5.jpg","images/p3-6.jpg"],
+            "floorPlan":"images/p3-floor.jpg",
+			"url":"/property/prop3",
             "added": {
                 "month":"December",
                 "day":15,
-                "year":2022
+                "year":2025
             }
         }
         ,
 		{
             "id":"prop4",
-			"type":"Apartment",
+			"type":"apartment",
             "bedrooms":2,
 			"price":95000000,
 			"tenure":"Freehold",
 			"description":"This luxury apartment offers modern city living with panoramic views and premium finishes. The open-plan living and dining area connects seamlessly to a balcony, while both bedrooms feature en-suite bathrooms. Residents enjoy access to shared amenities such as a gym, swimming pool, and 24-hour security, ensuring comfort, convenience, and safety.",
-			"location":"Colombo 03, Sri Lanka",
-			"picture":"images/prop4pic1small.jpg",
-			"url":"properties/prop4.html",
+			"location":"Colombo 03, Sri Lanka, C03",
+            "previewPicture":"images/p4-1.jpg",
+			"pictures":["images/p4-2.jpg","images/p4-3.jpg","images/p4-4.jpg","images/p4-5.jpg","images/p4-6.jpg"],
+            "floorPlan":"images/p4-floor.jpg",
+			"url":"/property/prop4",
             "added": {
                 "month":"November",
                 "day":24,
-                "year":2022
+                "year":2025
             }
         }
         ,
@@ -74,30 +82,34 @@
 			"price":68000000,
 			"tenure":"Freehold",
 			"description":"This eco-friendly home is designed with sustainability in mind, incorporating solar panels, natural ventilation, and green landscaping. The layout maximizes natural light and airflow, reducing energy consumption. Ideal for environmentally conscious homeowners, the property combines modern comfort with responsible living in a peaceful suburban environment.",
-			"location":"Piliyandala, Sri Lanka",
-			"picture":"images/prop5pic1small.jpg",
-			"url":"properties/prop5.html",
+			"location":"Piliyandala, Sri Lanka, P02",
+            "previewPicture":"images/p5-1.jpg",
+			"pictures":["images/p5-2.jpg","images/p5-3.jpg","images/p5-4.jpg","images/p5-5.jpg","images/p5-6.jpg"],
+            "floorPlan":"images/p5-floor.jpg",
+			"url":"/property/prop5",
             "added": {
                 "month":"October",
                 "day":4,
-                "year":2022
+                "year":2025
             }
         }
         ,
 		{
             "id":"prop6",
-			"type":"townhouse",
+			"type":"house",
             "bedrooms":3,
 			"price":58000000,
 			"tenure":"Freehold",
 			"description":"This contemporary townhouse offers a compact yet efficient layout across multiple levels. It includes spacious bedrooms, a modern kitchen, and a private outdoor area. Perfect for young families or professionals, the home provides easy access to main roads, educational institutions, and commercial hubs while maintaining a sense of privacy.",
-			"location":"Malabe, Sri Lanka",
-			"picture":"images/prop6pic1small.jpg",
-			"url":"properties/prop6.html",
+			"location":"Malabe, Sri Lanka, M05",
+            "previewPicture":"images/p6-1.jpg",
+			"pictures":["images/p6-2.jpg","images/p6-3.jpg","images/p6-4.jpg","images/p6-5.jpg","images/p6-6.jpg"],
+            "floorPlan":"images/p6-floor.jpg",
+			"url":"/property/prop6",
             "added": {
                 "month":"December",
                 "day":20,
-                "year":2022
+                "year":2025
             }
         },
 		{
@@ -107,13 +119,15 @@
 			"price":52000000,
 			"tenure":"Freehold",
 			"description":"This charming country house is surrounded by greenery and open landscapes, offering a calm and relaxed lifestyle. With spacious interiors, wide verandas, and natural materials, the home blends traditional charm with modern comfort. Ideal for those seeking tranquility, it provides ample space for family living away from city congestion.",
-			"location":"Kandy Outskirts, Sri Lanka",
-			"picture":"images/prop7pic1small.jpg",
-			"url":"properties/prop7.html",
+			"location":"Kandy Outskirts, Sri Lanka, K01",
+            "previewPicture":"images/p7-1.jpg",
+			"pictures":["images/p7-2.jpg","images/p7-3.jpg","images/p7-4.jpg","images/p7-5.jpg","images/p7-6.jpg"],
+            "floorPlan":"images/p7-floor.jpg",
+			"url":"/property/prop7",
             "added": {
                 "month":"January",
                 "day":10,
-                "year":2023
+                "year":2026
             }
         }
 ]}

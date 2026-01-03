@@ -10,19 +10,14 @@ const Results = () => {
 
       {results.length === 0 && <p>No properties found.</p>}
 
-      {results.map((property) => {
-        const imgSrc = property.pictures?.[0] ?? property.picture ?? "";
-
-        return (
-          <div key={property.id} style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
-            {imgSrc && (
-              <img
-                src={imgSrc}
-                alt="property"
-                width="200"
-              />
-            )}
-          <h3>£{property.price}</h3>
+      {results.map((property) => (
+        <div key={property.id} style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
+          <img
+            src={property.previewPicture}
+            alt="property"
+            width="200"
+          />
+          <h3>Rs.{property.price}</h3>
           <p>{property.location}</p>
           <p>{property.bedrooms} bedrooms</p>
 
