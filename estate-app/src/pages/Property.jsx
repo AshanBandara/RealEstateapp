@@ -1,5 +1,15 @@
+import { useParams } from "react-router-dom";
+
 const Property = () => {
-  return <h1>Property Page</h1>;
+	const { id } = useParams();
+
+	return (
+		<div>
+			<h1>Property Page</h1>
+			<p>Property ID: {id}</p>
+		</div>
+	);
 };
 
 export default Property;
+
