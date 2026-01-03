@@ -43,7 +43,7 @@ const Property = () => {
         ))}
       </div>
 
-      <h2>£{property.price}</h2>
+      <h2>Rs.{property.price.toLocaleString()}</h2>
       <p><strong>Bedrooms:</strong> {property.bedrooms}</p>
       <p><strong>Location:</strong> {property.location}</p>
 
