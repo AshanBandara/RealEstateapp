@@ -3,6 +3,7 @@
         {
             "id":"prop1",
 			"type":"house",
+            "title":"Elegant Urban Villa – Colombo 07",
             "bedrooms":4,
 			"price":185000000,
 			"tenure":"Freehold",
@@ -21,6 +22,7 @@
 		{
             "id":"prop2",
 			"type":"house",
+            "title":"Modern Family Residence – Kotte",
             "bedrooms":3,
 			"price":72000000,
 			"tenure":"Freehold",
@@ -40,6 +42,7 @@
 		{
             "id":"prop3",
 			"type":"house",
+            "title":"Exclusive Beachfront Villa – Bentota",
             "bedrooms":5,
 			"price":260000000,
 			"tenure":"Freehold",
@@ -59,6 +62,7 @@
 		{
             "id":"prop4",
 			"type":"apartment",
+            "title":"Luxury City Apartment – Colombo 03",
             "bedrooms":2,
 			"price":95000000,
 			"tenure":"Freehold",
@@ -78,6 +82,7 @@
 		{
             "id":"prop5",
 			"type":"house",
+            "title":"Eco-Friendly Contemporary Home – Piliyandala",
             "bedrooms":3,
 			"price":68000000,
 			"tenure":"Freehold",
@@ -97,13 +102,14 @@
 		{
             "id":"prop6",
 			"type":"house",
+            "title":"Stylish Townhouse Living – Malabe",
             "bedrooms":3,
 			"price":58000000,
 			"tenure":"Freehold",
 			"description":"This contemporary townhouse offers a compact yet efficient layout across multiple levels. It includes spacious bedrooms, a modern kitchen, and a private outdoor area. Perfect for young families or professionals, the home provides easy access to main roads, educational institutions, and commercial hubs while maintaining a sense of privacy.",
 			"location":"Malabe, Sri Lanka, M05",
             "previewPicture":"images/p6-1.jpg",
-			"pictures":["images/p6-2.jpg","images/p6-3.jpg","images/p6-4.jpg","images/p6-5.jpg","images/p6-6.jpg"],
+            "pictures":["images/p6-2.jpg","images/p6-3.jpg","images/p6-4.jpg","images/p6-5.jpg","images/p6-6.png"],
             "floorPlan":"images/p6-floor.jpg",
 			"url":"/property/prop6",
             "added": {
@@ -115,6 +121,7 @@
 		{
             "id":"prop7",
 			"type":"house",
+            "title":"Serene Country Estate – Kandy Outskirts",
             "bedrooms":4,
 			"price":52000000,
 			"tenure":"Freehold",
