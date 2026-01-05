@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import data from "../data/properties.json";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -22,25 +22,34 @@ const Property = () => {
     localStorage.setItem("favourites", JSON.stringify(favourites));
   }, [favourites]);
 
-  // Handle Image Normalization
-  const rawImages = property
-    ? [property.previewPicture ?? property.picture, ...(Array.isArray(property.pictures) ? property.pictures : [])]
-      .filter(Boolean)
-    : [];
-
+  // Handle Image Normalization (memoized so identity is stable between renders)
   const normalizeSrc = (src) => {
     if (!src) return "";
-    if (src.startsWith("/") || src.startsWith("http")) return src;
-    return `/${src}`;
+    // If it's an absolute HTTP(s) URL, return as-is
+    if (src.startsWith("http")) return src;
+
+    // Use Vite's BASE_URL so assets resolve correctly when deployed under a subpath
+    const base = import.meta.env.BASE_URL || "/";
+    const cleaned = src.replace(/^\/+/, ""); // remove leading slash to avoid //
+    return `${base}${cleaned}`;
   };
 
-  const images = rawImages.map(normalizeSrc);
+  const images = useMemo(() => {
+    if (!property) return [];
+    return [property.previewPicture ?? property.picture, ...(Array.isArray(property.pictures) ? property.pictures : [])]
+      .filter(Boolean)
+      .map(normalizeSrc);
+  }, [property]);
   const [mainImage, setMainImage] = useState(images[0] ?? "");
 
   // Update main image if property changes or images load
   useEffect(() => {
-    if (images.length > 0) setMainImage(images[0]);
-  }, [id]);
+    if (images.length > 0) {
+      setMainImage((prev) => (prev && images.includes(prev) ? prev : images[0]));
+    } else {
+      setMainImage("");
+    }
+  }, [images]);
 
 
   const addToFavourites = () => {
