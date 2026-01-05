@@ -141,7 +141,7 @@ const Property = () => {
                 <TabList>
                   <Tab>Description</Tab>
                   <Tab>Floor Plan</Tab>
-                  <Tab>Map</Tab>
+                  <Tab>Google Map</Tab>
                 </TabList>
 
                 <TabPanel>
