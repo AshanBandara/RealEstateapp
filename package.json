@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://AshanBandara.github.io/RealEstateapp",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +12,9 @@
     "test": "vitest"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
+    "deploy": "gh-pages -d dist",
     "react-datepicker": "^9.1.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.11.0",
