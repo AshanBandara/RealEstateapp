@@ -40,16 +40,30 @@ const Property = () => {
       .filter(Boolean)
       .map(normalizeSrc);
   }, [property]);
-  const [mainImage, setMainImage] = useState(images[0] ?? "");
 
-  // Update main image if property changes or images load
-  useEffect(() => {
-    if (images.length > 0) {
-      setMainImage((prev) => (prev && images.includes(prev) ? prev : images[0]));
-    } else {
-      setMainImage("");
-    }
-  }, [images]);
+
+  const Visuals = ({ images, title }) => {
+    const [mainImage, setMainImage] = useState(images[0] ?? "");
+
+    return (
+      <div className="property-visuals">
+        <div className="main-image-wrapper">
+          <img src={mainImage} alt={title} className="main-image-display" />
+        </div>
+        <div className="thumbnails-grid">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className={`thumbnail-wrapper ${mainImage === img ? 'active' : ''}`}
+              onClick={() => setMainImage(img)}
+            >
+              <img src={img} alt={`View ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
 
   const addToFavourites = () => {
@@ -109,22 +123,9 @@ const Property = () => {
 
           <div className="property-grid-layout">
             {/* LEFT: Images */}
-            <div className="property-visuals">
-              <div className="main-image-wrapper">
-                <img src={mainImage} alt={property.title} className="main-image-display" />
-              </div>
-              <div className="thumbnails-grid">
-                {images.map((img, index) => (
-                  <div
-                    key={index}
-                    className={`thumbnail-wrapper ${mainImage === img ? 'active' : ''}`}
-                    onClick={() => setMainImage(img)}
-                  >
-                    <img src={img} alt={`View ${index + 1}`} />
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* Key ensures `Visuals` is recreated when `images` changes so its initial state
+                is set from the new images and we avoid setting state synchronously in an effect */}
+            <Visuals key={images.join('|') || 'no-images'} images={images} title={property.title} />
 
             {/* RIGHT: Details & Tabs */}
             <div className="property-info-panel">
