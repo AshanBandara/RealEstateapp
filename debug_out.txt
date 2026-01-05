@@ -1,0 +1,14 @@
+
+ RUN  v4.0.16 G:/ashan/RealEstateapp
+
+stdout | src/components/__tests__/Debug.test.jsx > Debug Data Load > loads properties correctly
+Properties length: [33m7[39m
+First property: {"id":"prop1","type":"house","title":"Elegant Urban Villa – Colombo 07","bedrooms":4,"price":185000000,"tenure":"Freehold","description":"This modern luxury villa features expansive open-plan living spaces, floor-to-ceiling glass panels, and seamless indoor–outdoor connections. Designed for comfort and elegance, the home includes a private swimming pool, landscaped garden, and premium finishes throughout. Ideal for high-end urban living, it offers privacy, natural light, and modern architectural excellence in a prestigious neighborhood.","location":"Colombo 07, Sri Lanka, C07","previewPicture":"images/p1-1.jpg","pictures":["images/p1-2.jpg","images/p1-3.jpg","images/p1-4.jpg","images/p1-5.jpg","images/p1-6.jpg"],"floorPlan":"images/p1-floor.jpg","url":"/property/prop1","added":{"month":"October","day":12,"year":2025}}
+
+ ✓ src/components/__tests__/Debug.test.jsx (1 test) 3ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  09:44:50
+   Duration  725ms (transform 64ms, setup 71ms, import 54ms, tests 3ms, environment 466ms)
+

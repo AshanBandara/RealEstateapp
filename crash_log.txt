@@ -1,0 +1,56 @@
+
+ RUN  v4.0.16 G:/ashan/RealEstateapp
+
+stderr | src/components/__tests__/Search.test.jsx > Search Component > 1. renders search form and initial properties
+TEST FATAL ERROR: ReferenceError: Badge is not defined
+    at Search (G:/ashan/RealEstateapp/src/pages/Search.jsx:246:49)
+    at Object.react_stack_bottom_frame [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:25904:20[90m)[39m
+    at renderWithHooks [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:7662:22[90m)[39m
+    at updateFunctionComponent [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:10166:19[90m)[39m
+    at beginWork [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:11778:18[90m)[39m
+    at runWithFiberInDEV [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:874:13[90m)[39m
+    at performUnitOfWork [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:17641:22[90m)[39m
+    at workLoopSync [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:17469:41[90m)[39m
+    at renderRootSync [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:17450:11[90m)[39m
+    at performWorkOnRoot [90m(G:\ashan\RealEstateapp\[39mnode_modules\[4mreact-dom[24m\cjs\react-dom-client.development.js:16583:35[90m)[39m
+
+ ❯ src/components/__tests__/Search.test.jsx (5 tests | 5 failed) 28ms
+     × 1. renders search form and initial properties 17ms
+     × 2. filters properties by price range 4ms
+     × 3. filters properties by type 2ms
+     × 4. adds property to favourites 2ms
+     × 5. removes property from favourites 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 1. renders search form and initial properties
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 2. filters properties by price range
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 3. filters properties by type
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 4. adds property to favourites
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 5. removes property from favourites
+ReferenceError: Badge is not defined
+ ❯ Search src/pages/Search.jsx:246:49
+    244|                         {/* RESULTS */}
+    245|                         <div className="results-header">
+    246|                             <h2>Search Results <Badge variant="seconda…
+       |                                                 ^
+    247|                         </div>
+    248| 
+ ❯ Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:20
+ ❯ renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:22
+ ❯ updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:19
+ ❯ beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:18
+ ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:874:13
+ ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:22
+ ❯ workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:41
+ ❯ renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:11
+ ❯ performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:35
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed (5)
+   Start at  09:48:17
+   Duration  1.21s (transform 277ms, setup 73ms, import 533ms, tests 28ms, environment 450ms)
+

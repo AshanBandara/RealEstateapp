@@ -1,0 +1,43 @@
+
+ RUN  v4.0.16 G:/ashan/RealEstateapp
+
+ ❯ src/components/__tests__/Search.test.jsx (5 tests | 5 failed) 29ms
+     × renders search form and initial properties 16ms
+     × filters properties by price 2ms
+     × filters properties by numbers of bedrooms 2ms
+     × adds property to favourites via button 2ms
+     × removes property from favourites 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > renders search form and initial properties
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > filters properties by price
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > filters properties by numbers of bedrooms
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > adds property to favourites via button
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > removes property from favourites
+ReferenceError: Badge is not defined
+ ❯ Search src/pages/Search.jsx:246:49
+    244|                         {/* RESULTS */}
+    245|                         <div className="results-header">
+    246|                             <h2>Search Results <Badge variant="seconda…
+       |                                                 ^
+    247|                         </div>
+    248| 
+ ❯ Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:20
+ ❯ renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:22
+ ❯ updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:19
+ ❯ beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:18
+ ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:874:13
+ ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:22
+ ❯ workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:41
+ ❯ renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:11
+ ❯ performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:35
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed (5)
+   Start at  09:46:33
+   Duration  1.17s (transform 291ms, setup 66ms, import 515ms, tests 29ms, environment 438ms)
+

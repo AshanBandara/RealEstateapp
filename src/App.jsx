@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./index.css";
+import "./components/components.css"; // Import component styles
 import Search from "./pages/Search";
 import Property from "./pages/Property";
 
@@ -14,4 +15,5 @@ function App() {
   );
 }
 
+// Add a default export or named export if needed, but Vite expects default export for App
 export default App;

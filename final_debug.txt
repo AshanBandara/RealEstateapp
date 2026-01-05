@@ -1,0 +1,894 @@
+
+ RUN  v4.0.16 G:/ashan/RealEstateapp
+
+stdout | src/components/__tests__/Debug.test.jsx > Debug Data Load > loads properties correctly
+Properties length: [33m7[39m
+First property: {"id":"prop1","type":"house","title":"Elegant Urban Villa – Colombo 07","bedrooms":4,"price":185000000,"tenure":"Freehold","description":"This modern luxury villa features expansive open-plan living spaces, floor-to-ceiling glass panels, and seamless indoor–outdoor connections. Designed for comfort and elegance, the home includes a private swimming pool, landscaped garden, and premium finishes throughout. Ideal for high-end urban living, it offers privacy, natural light, and modern architectural excellence in a prestigious neighborhood.","location":"Colombo 07, Sri Lanka, C07","previewPicture":"images/p1-1.jpg","pictures":["images/p1-2.jpg","images/p1-3.jpg","images/p1-4.jpg","images/p1-5.jpg","images/p1-6.jpg"],"floorPlan":"images/p1-floor.jpg","url":"/property/prop1","added":{"month":"October","day":12,"year":2025}}
+
+ ✓ src/components/__tests__/Data.test.jsx (5 tests) 3ms
+ ✓ src/components/__tests__/Debug.test.jsx (1 test) 3ms
+ ❯ src/components/__tests__/Search.test.jsx (5 tests | 4 failed) 1318ms
+     × 1. renders search form and initial properties 72ms
+     × 2. filters properties by price range 35ms
+     × 3. filters properties by type 26ms
+     ✓ 4. adds property to favourites 153ms
+     × 5. removes property from favourites 1031ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 1. renders search form and initial properties
+TestingLibraryElementError: Found multiple elements with the text: /7/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<span[39m
+  [33mclass[39m=[32m"badge badge-secondary "[39m
+[36m>[39m
+  [0m7[0m
+[36m</span>[39m
+
+Ignored nodes: comments, script, style
+[36m<a[39m
+  [33mdata-discover[39m=[32m"true"[39m
+  [33mhref[39m=[32m"/property/prop1"[39m
+[36m>[39m
+  [0mElegant Urban Villa – Colombo 07[0m
+[36m</a>[39m
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"card-location"[39m
+[36m>[39m
+  [0m📍 [0m
+  [0mColombo 07, Sri Lanka, C07[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"card-price"[39m
+[36m>[39m
+  [0mLKR 72,000,000[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"card-location"[39m
+[36m>[39m
+  [0m📍 [0m
+  [0mKotte, Sri Lanka, K07[0m
+[36m</p>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"site-header"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"header-inner"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"logo"[39m
+          [36m>[39m
+            [0mEstateMart.[0m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</header>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"site-main"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"hero"[39m
+        [36m>[39m
+          [36m<h1>[39m
+            [0mFind Your Dream Home[0m
+          [36m</h1>[39m
+          [36m<p>[39m
+            [0mSearch properties by type, price, location, and more.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"page-container"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"search-card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-title"[39m
+              [36m>[39m
+                [0mFilter Properties[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-grid"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mProperty Type[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mdata-testid[39m=[32m"mock-select-container"[39m
+                  [36m>[39m
+                    [36m<select[39m
+                      [33mdata-testid[39m=[32m"mock-select"[39m
+                    [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m""[39m
+                      [36m>[39m
+                        [0mAny[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"house"[39m
+                      [36m>[39m
+                        [0mHouse[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"apartment"[39m
+                      [36m>[39m
+                        [0mApartment[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"flat"[39m
+                      [36m>[39m
+                        [0mFlat[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mAdded After[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mdata-testid[39m=[32m"mock-datepicker"[39m
+                    [33mplaceholder[39m=[32m"Select date"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mPostcode / Area[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"e.g. C07"[39m
+                    [33mtype[39m=[32m"text"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"search-actions"[39m
+                  [33mstyle[39m=[32m"grid-column: 1 / -1; margin-top: 1rem;"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+                  [36m>[39m
+                    [0mSearch Properties[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-ghost btn-md "[39m
+                  [36m>[39m
+                    [0mClear Filters[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"results-header"[39m
+            [36m>[39m
+              [36m<h2>[39m
+                [0mSearch Results [0m
+                [36m<span[39m
+                  [33mclass[39m=[32m"badge badge-secondary "[39m
+                [36m>[39m
+                  [0m7[0m
+                [36m</span>[39m
+              [36m</h2>[39m
+            [36m</div>[39m
+            [36m<div[39m
+         ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getElementError node_modules/@testing-library/dom/dist/query-helpers.js:20:35
+ ❯ getMultipleElementsFoundError node_modules/@testing-library/dom/dist/query-helpers.js:23:10
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+ ❯ getByText node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/__tests__/Search.test.jsx:57:23
+     55|         expect(screen.getByText(/Elegant Urban Villa/i)).toBeInTheDocu…
+     56|         // Check that result count is initially 7
+     57|         expect(screen.getByText(/7/i)).toBeInTheDocument();
+       |                       ^
+     58|     });
+     59| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 2. filters properties by price range
+TestingLibraryElementError: Found multiple elements with the text: /Search Properties/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<p>[39m
+  [0mSearch properties by type, price, location, and more.[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<button[39m
+  [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+[36m>[39m
+  [0mSearch Properties[0m
+[36m</button>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"site-header"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"header-inner"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"logo"[39m
+          [36m>[39m
+            [0mEstateMart.[0m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</header>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"site-main"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"hero"[39m
+        [36m>[39m
+          [36m<h1>[39m
+            [0mFind Your Dream Home[0m
+          [36m</h1>[39m
+          [36m<p>[39m
+            [0mSearch properties by type, price, location, and more.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"page-container"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"search-card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-title"[39m
+              [36m>[39m
+                [0mFilter Properties[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-grid"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mProperty Type[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mdata-testid[39m=[32m"mock-select-container"[39m
+                  [36m>[39m
+                    [36m<select[39m
+                      [33mdata-testid[39m=[32m"mock-select"[39m
+                    [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m""[39m
+                      [36m>[39m
+                        [0mAny[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"house"[39m
+                      [36m>[39m
+                        [0mHouse[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"apartment"[39m
+                      [36m>[39m
+                        [0mApartment[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"flat"[39m
+                      [36m>[39m
+                        [0mFlat[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m"180000000"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m"200000000"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mAdded After[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mdata-testid[39m=[32m"mock-datepicker"[39m
+                    [33mplaceholder[39m=[32m"Select date"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mPostcode / Area[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"e.g. C07"[39m
+                    [33mtype[39m=[32m"text"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"search-actions"[39m
+                  [33mstyle[39m=[32m"grid-column: 1 / -1; margin-top: 1rem;"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+                  [36m>[39m
+                    [0mSearch Properties[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-ghost btn-md "[39m
+                  [36m>[39m
+                    [0mClear Filters[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"results-header"[39m
+            [36m>[39m
+              [36m<h2>[39m
+                [0mSearch Results [0m
+                [36m<span[39m
+                  [33mclass[39m=[32m"badge badge-secondary "[39m
+                [36m>[39m
+                  [0m7[0m
+                [36m</span>[39m
+              [36m</h2>[39m
+            [36m</div>[39m
+            [36m<...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getElementError node_modules/@testing-library/dom/dist/query-helpers.js:20:35
+ ❯ getMultipleElementsFoundError node_modules/@testing-library/dom/dist/query-helpers.js:23:10
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+ ❯ getByText node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/__tests__/Search.test.jsx:72:34
+     70| 
+     71|         // Click Search
+     72|         const searchBtn = screen.getByText(/Search Properties/i);
+       |                                  ^
+     73|         fireEvent.click(searchBtn);
+     74| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 3. filters properties by type
+TestingLibraryElementError: Found multiple elements with the text: /Search Properties/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<p>[39m
+  [0mSearch properties by type, price, location, and more.[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<button[39m
+  [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+[36m>[39m
+  [0mSearch Properties[0m
+[36m</button>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"site-header"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"header-inner"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"logo"[39m
+          [36m>[39m
+            [0mEstateMart.[0m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</header>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"site-main"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"hero"[39m
+        [36m>[39m
+          [36m<h1>[39m
+            [0mFind Your Dream Home[0m
+          [36m</h1>[39m
+          [36m<p>[39m
+            [0mSearch properties by type, price, location, and more.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"page-container"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"search-card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-title"[39m
+              [36m>[39m
+                [0mFilter Properties[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-grid"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mProperty Type[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mdata-testid[39m=[32m"mock-select-container"[39m
+                  [36m>[39m
+                    [36m<select[39m
+                      [33mdata-testid[39m=[32m"mock-select"[39m
+                    [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m""[39m
+                      [36m>[39m
+                        [0mAny[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"house"[39m
+                      [36m>[39m
+                        [0mHouse[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"apartment"[39m
+                      [36m>[39m
+                        [0mApartment[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"flat"[39m
+                      [36m>[39m
+                        [0mFlat[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Price[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Price (LKR)"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMin Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Min Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mMax Bedrooms[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"Max Beds"[39m
+                    [33mtype[39m=[32m"number"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mAdded After[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mdata-testid[39m=[32m"mock-datepicker"[39m
+                    [33mplaceholder[39m=[32m"Select date"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"field"[39m
+                [36m>[39m
+                  [36m<label>[39m
+                    [0mPostcode / Area[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mplaceholder[39m=[32m"e.g. C07"[39m
+                    [33mtype[39m=[32m"text"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"search-actions"[39m
+                  [33mstyle[39m=[32m"grid-column: 1 / -1; margin-top: 1rem;"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+                  [36m>[39m
+                    [0mSearch Properties[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-ghost btn-md "[39m
+                  [36m>[39m
+                    [0mClear Filters[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"results-header"[39m
+            [36m>[39m
+              [36m<h2>[39m
+                [0mSearch Results [0m
+                [36m<span[39m
+                  [33mclass[39m=[32m"badge badge-secondary "[39m
+                [36m>[39m
+                  [0m7[0m
+                [36m</span>[39m
+              [36m</h2>[39m
+            [36m</div>[39m
+            [36m<div[39m
+         ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getElementError node_modules/@testing-library/dom/dist/query-helpers.js:20:35
+ ❯ getMultipleElementsFoundError node_modules/@testing-library/dom/dist/query-helpers.js:23:10
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+ ❯ getByText node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/__tests__/Search.test.jsx:88:34
+     86|         fireEvent.change(select, { target: { value: 'apartment' } });
+     87| 
+     88|         const searchBtn = screen.getByText(/Search Properties/i);
+       |                                  ^
+     89|         fireEvent.click(searchBtn);
+     90| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/components/__tests__/Search.test.jsx > Search Component > 5. removes property from favourites
+Error: [2mexpect([22m[31mreceived[39m[2m).toBeInTheDocument()[22m
+
+[31mreceived[39m value must be an HTMLElement or an SVGElement.
+Received has type:  Undefined
+Received has value: [31mundefined[39m
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head />[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div>[39m
+        [36m<header[39m
+          [33mclass[39m=[32m"site-header"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"header-inner"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"logo"[39m
+            [36m>[39m
+              [0mEstateMart.[0m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</header>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"site-main"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"hero"[39m
+          [36m>[39m
+            [36m<h1>[39m
+              [0mFind Your Dream Home[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mSearch properties by type, price, location, and more.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"page-container"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"search-card"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"search-title"[39m
+                [36m>[39m
+                  [0mFilter Properties[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"search-grid"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mProperty Type[0m
+                    [36m</label>[39m
+                    [36m<div[39m
+                      [33mdata-testid[39m=[32m"mock-select-container"[39m
+                    [36m>[39m
+                      [36m<select[39m
+                        [33mdata-testid[39m=[32m"mock-select"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m""[39m
+                        [36m>[39m
+                          [0mAny[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"house"[39m
+                        [36m>[39m
+                          [0mHouse[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"apartment"[39m
+                        [36m>[39m
+                          [0mApartment[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"flat"[39m
+                        [36m>[39m
+                          [0mFlat[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mMin Price[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mplaceholder[39m=[32m"Min Price (LKR)"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mMax Price[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mplaceholder[39m=[32m"Max Price (LKR)"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mMin Bedrooms[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mplaceholder[39m=[32m"Min Beds"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mMax Bedrooms[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mplaceholder[39m=[32m"Max Beds"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mAdded After[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mdata-testid[39m=[32m"mock-datepicker"[39m
+                      [33mplaceholder[39m=[32m"Select date"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"field"[39m
+                  [36m>[39m
+                    [36m<label>[39m
+                      [0mPostcode / Area[0m
+                    [36m</label>[39m
+                    [36m<input[39m
+                      [33mplaceholder[39m=[32m"e.g. C07"[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"search-actions"[39m
+                    [33mstyle[39m=[32m"grid-column: 1 / -1; margin-top: 1rem;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary btn-md "[39m
+                    [36m>[39m
+                      [0mSearch Properties[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-ghost btn-md "[39m
+                    [36m>[39m
+                      [0mClear Filters[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"results-header"[39m
+ ...
+ ❯ src/components/__tests__/Search.test.jsx:119:133
+    117|         fireEvent.click(favButtons[0]);
+    118| 
+    119|         await waitFor(() => expect(screen.getAllByRole('heading', { le…
+       |                                                                                                                                     ^
+    120| 
+    121|         // Remove (click X in sidebar)
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  4 failed | 7 passed (11)
+   Start at  09:51:55
+   Duration  2.46s (transform 399ms, setup 206ms, import 624ms, tests 1.32s, environment 1.39s)
+
