@@ -19,8 +19,7 @@ const Search = () => {
     const [postcode, setPostcode] = useState("");
 
     const properties = data.properties;
-    const [results, setResults] = useState(properties); // Show all initially or none? User requirement: "Display the properties that correspond to the search". Initially empty? Or all? Let's show all initially for UX.
-
+    const [results, setResults] = useState(properties); // Show all initially or none?
     // Favourites State
     const [favourites, setFavourites] = useState(() => {
         const saved = localStorage.getItem("favourites");
@@ -49,25 +48,13 @@ const Search = () => {
             if (dateAdded) {
                 const propertyDate = new Date(
                     property.added.year,
-                    // Month in ID is string, need to convert or standardise in JSON. 
-                    // In JSON it is "October", "September".
-                    // Let's create a map or use Date.parse
                     new Date(Date.parse(property.added.month + " 1, 2000")).getMonth(),
                     property.added.day
                 );
                 if (propertyDate < dateAdded) return false;
             }
 
-            // POSTCODE: "1st part of the postcode, e.g. BR1, NW1"
-            // The location field has "Colombo 07, Sri Lanka, C07". The JSON actually has postcode? 
-            // JSON has "location" string. Let's look at it.
-            // JSON items: "location":"Colombo 07, Sri Lanka, C07". The last part looks like postcode.
-            // Requirements: "postcode area (1st part of the postcode)".
-            // Let's assume the user searches by string match on the location or specific postcode field.
-            // Actually, looking at JSON from Step 25, there is NO separate postcode field, just "location".
-            // Wait, let's re-read Step 25.
-            // "location":"Colombo 07, Sri Lanka, C07"
-            // Ah, I should check if the search logic matches this. A simple includes check is robust enough given the data.
+            
             if (postcode && !property.location.toUpperCase().includes(postcode)) {
                 return false;
             }
@@ -87,7 +74,7 @@ const Search = () => {
         setMaxBeds("");
         setDateAdded(null);
         setPostcode("");
-        setResults(properties); // Reset to show all or empty. Let's show all.
+        setResults(properties); // Reset to show all or empty.
     };
 
     // Favourites Logic
@@ -214,7 +201,7 @@ const Search = () => {
                                         selected={dateAdded}
                                         onChange={(date) => setDateAdded(date)}
                                         placeholderText="Select date"
-                                        className="w-full" // Use CSS to style this input properly if className doesn't work, actually defaults apply but input styling in components.css targets .field input so it should be fine if DatePicker renders input
+                                        className="w-full" 
                                         customInput={<input />}
                                     />
                                 </div>
