@@ -25,10 +25,8 @@ const Property = () => {
   // Handle Image Normalization (memoized so identity is stable between renders)
   const normalizeSrc = (src) => {
     if (!src) return "";
-    // If it's an absolute HTTP(s) URL, return as-is
     if (src.startsWith("http")) return src;
 
-    // Use Vite's BASE_URL so assets resolve correctly when deployed under a subpath
     const base = import.meta.env.BASE_URL || "/";
     const cleaned = src.replace(/^\/+/, ""); // remove leading slash to avoid //
     return `${base}${cleaned}`;
@@ -123,8 +121,6 @@ const Property = () => {
 
           <div className="property-grid-layout">
             {/* LEFT: Images */}
-            {/* Key ensures `Visuals` is recreated when `images` changes so its initial state
-                is set from the new images and we avoid setting state synchronously in an effect */}
             <Visuals key={images.join('|') || 'no-images'} images={images} title={property.title} />
 
             {/* RIGHT: Details & Tabs */}
