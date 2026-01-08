@@ -23,19 +23,6 @@ const Button = ({
     lg: 'text-lg px-6 py-3 rounded-xl'
   };
 
-  // Maps CSS variable names to classes (since we are using vanilla CSS mostly but I will add inline styles or utility classes if needed, 
-  // currently assuming a hybrid approach or mapping these classes to standard CSS in App.css or index.css. 
-  // Wait, I am using vanilla CSS variables but describing Tailwind-like classes.
-  // I should write actual CSS or use style objects. Since I replaced index.css with variables, 
-  // I should probably write a simple CSS module or just styled components logic. 
-  // BETTER IDEA: React Components with `style` prop or dedicated CSS files.
-  // Given the "React Widgets" requirement, I should make these robust.
-  // Let's use vanilla CSS with a dedicated file for components or Inline Styles for simplicity in this specific file if avoiding too many CSS files.
-  // Actually, I can just put the styles in the component using a style object or BEM naming.
-  // Let's use BEM-like classes and add them to index.css or a new components.css
-  
-  // RE-EVALUATION: To ensure "Aesthetics" and "React Widgets" marks, let's use a module-like approach or just good old BEM in a separate CSS file to keep it clean.
-  // I'll create `src/components/components.css` and import it.
   
   return (
     <button 
