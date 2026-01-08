@@ -15,5 +15,5 @@ function App() {
   );
 }
 
-// Add a default export or named export if needed, but Vite expects default export for App
+
 export default App;
